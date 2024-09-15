@@ -41,12 +41,15 @@
 
             <div class="form-group">
               <label for="contact-number">Contact Number
-                <span class="required"><span class="required">*</span></span></label>
+                <span class="required">*</span>
+              </label>
               <div class="contact-input">
-                <select style="width: 20%;">
-                  <img src="./assets/images/flag.png" alt="eqfdew" />
-                  <option value="+966">+966</option>
-                  <option value="+967">+967</option>
+                <select id="country-code" class="country-code-select">
+                  <option value="+966" data-flag="flag-saudi-arabia">
+                    <p><img src="./assets/images/flag.png" />
+                      +966</p>
+                  </option>
+                  <option value="+967" data-flag="flag-yemen">+967</option>
                 </select>
                 <input id="contact-number" type="text" required />
               </div>
