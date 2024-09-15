@@ -18,7 +18,7 @@
       </div>
       <div class="form-container">
         <h1 class="journey-heading">START YOUR JOURNEY</h1>
-        <form action="./pages/research-details.html"> 
+        <form>
           <div class="form-row">
             <div class="form-group">
               <label for="first-name">First Name
@@ -44,7 +44,9 @@
                 <span class="required"><span class="required">*</span></span></label>
               <div class="contact-input">
                 <select style="width: 20%;">
+                  <img src="./assets/images/flag.png" alt="eqfdew" />
                   <option value="+966">+966</option>
+                  <option value="+967">+967</option>
                 </select>
                 <input id="contact-number" type="text" required />
               </div>
@@ -59,36 +61,38 @@
 
             <div class="radio-options">
               <div class="radio-options-group">
-                <input type="radio" id="option1" name="interest" value="Early Childhood Education" required />
+                <input type="radio" id="option1" name="interest" value="Slide3" required />
                 <p for="option1" class="radio-label-content">Early Childhood Education</p>
               </div>
             </div>
 
             <div class="radio-options">
               <div class="radio-options-group">
-                <input type="radio" id="option2" name="interest" value="Learning More About ERI" required />
+                <input type="radio" id="option2" name="interest" value="Slide3" required />
                 <p for="option2" class="radio-label-content">Learning More About ERI</p>
               </div>
             </div>
 
             <div class="radio-options">
               <div class="radio-options-group">
-                <input type="radio" id="option3" name="interest" value="Providing Training Courses" required />
+                <input type="radio" id="option3" name="interest" value="Slide4" required />
                 <p for="option3" class="radio-label-content">Providing Training Courses</p>
               </div>
             </div>
 
             <div class="radio-options">
               <div class="radio-options-group">
-                <input type="radio" id="option4" name="interest" value="Training Courses For My Employees" required />
+                <input type="radio" id="option4" name="interest" value="Slide4" required />
                 <p for="option4" class="radio-label-content">Training Courses For My Employees</p>
               </div>
             </div>
 
             <div class="radio-options">
               <div class="radio-options-group">
-                <input type="radio" id="option5" name="interest" value="Training Courses For My Employees" required />
-                <input type="text" placeholder="Other" style="font-family:Raleway, sans-serif;"/>
+                <input type="radio" id="option5" name="interest" value="Slide5" required />
+                <div>
+                  <input type="text" placeholder="Other" style="font-family:Raleway, sans-serif;" />
+                </div>
               </div>
             </div>
           </div>
@@ -100,7 +104,7 @@
             </span>
             <p class="contact-content">
               We’d like to stay in touch to tell you about news and
-              opportunities.<br/> We will treat your information carefully. See our
+              opportunities.<br /> We will treat your information carefully. See our
               <a href="#">Terms & Conditions</a> and
               <a href="#">Privacy Policy</a>.
             </p>
@@ -119,12 +123,14 @@
           </div>
 
           <div class="button-container">
-              <button type="submit" class="button">Next</button>
+            <button type="button" id="nextButton" class="button">Next</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
