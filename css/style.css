@@ -115,7 +115,6 @@ select {
 .contact-input {
   display: flex;
   width: calc(100% - 10px);
-  gap: 16px;
 }
 
 .contact-input select {
@@ -239,6 +238,10 @@ select {
   justify-items: center;
   align-items: center;
   text-align: center;
+}
+
+.country-code-select {
+  width: 70px;
 }
 
 @media screen and (max-width: 700px) {

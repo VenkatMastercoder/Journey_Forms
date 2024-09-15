@@ -1,139 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey Forms</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journey Forms</title>
+    <!--CSS FILE-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <!--CSS FILE-->
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <div class="container">
-    <div class="safety-container">
-      <div class="image-container">
-        <img src="./assets/images/Banner.png" alt="banner-image" class="banner-image" />
-      </div>
-      <div class="form-container">
-        <h1 class="journey-heading">START YOUR JOURNEY</h1>
-        <form>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first-name">First Name
-                <span class="required"><span class="required">*</span></span></label>
-              <input id="first-name" type="text" required />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name
-                <span class="required"><span class="required">*</span></span></label>
-              <input id="last-name" type="text" required />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email
-                <span class="required"><span class="required">*</span></span></label>
-              <input id="email" type="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="contact-number">Contact Number
-                <span class="required">*</span>
-              </label>
-              <div class="contact-input">
-                <select id="country-code" class="country-code-select">
-                  <option value="+966" data-flag="flag-saudi-arabia">
-                    <p><img src="./assets/images/flag.png" />
-                      +966</p>
-                  </option>
-                  <option value="+967" data-flag="flag-yemen">+967</option>
-                </select>
-                <input id="contact-number" type="text" required />
+  <body>
+    <div class="container">
+      <div class="safety-container">
+        <div class="image-container">
+          <img
+            src="./assets/images/Banner.png"
+            alt="banner-image"
+            class="banner-image" />
+        </div>
+        <div class="form-container">
+          <h1 class="journey-heading">START YOUR JOURNEY</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name"
+                  >First Name
+                  <span class="required"
+                    ><span class="required">*</span></span
+                  ></label
+                >
+                <input id="first-name" type="text" required />
               </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="radio-container">
-              <span class="radio-heading">I am interested in</span>
-              <span class="required">*</span>
-            </div>
-
-            <div class="radio-options">
-              <div class="radio-options-group">
-                <input type="radio" id="option1" name="interest" value="Slide3" required />
-                <p for="option1" class="radio-label-content">Early Childhood Education</p>
+              <div class="form-group">
+                <label for="last-name"
+                  >Last Name
+                  <span class="required"
+                    ><span class="required">*</span></span
+                  ></label
+                >
+                <input id="last-name" type="text" required />
               </div>
             </div>
 
-            <div class="radio-options">
-              <div class="radio-options-group">
-                <input type="radio" id="option2" name="interest" value="Slide3" required />
-                <p for="option2" class="radio-label-content">Learning More About ERI</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email"
+                  >Email
+                  <span class="required"
+                    ><span class="required">*</span></span
+                  ></label
+                >
+                <input id="email" type="email" required />
               </div>
-            </div>
 
-            <div class="radio-options">
-              <div class="radio-options-group">
-                <input type="radio" id="option3" name="interest" value="Slide4" required />
-                <p for="option3" class="radio-label-content">Providing Training Courses</p>
-              </div>
-            </div>
-
-            <div class="radio-options">
-              <div class="radio-options-group">
-                <input type="radio" id="option4" name="interest" value="Slide4" required />
-                <p for="option4" class="radio-label-content">Training Courses For My Employees</p>
-              </div>
-            </div>
-
-            <div class="radio-options">
-              <div class="radio-options-group">
-                <input type="radio" id="option5" name="interest" value="Slide5" required />
-                <div>
-                  <input type="text" placeholder="Other" style="font-family:Raleway, sans-serif;" />
+              <div class="form-group">
+                <label for="contact-number"
+                  >Contact Number
+                  <span class="required">*</span>
+                </label>
+                <div class="contact-input">
+                  <select id="country-code" class="country-code-select">
+                    <option value="+966" data-flag="flag-saudi-arabia">
+                      <p>+966</p>
+                    </option>
+                    <option value="+967" data-flag="flag-yemen">+967</option>
+                  </select>
+                  <input id="contact-number" type="text" required />
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="contact-preferences">
-            <span class="radio-heading">
-              CONTACT PREFERENCES
-              <span class="required"><span class="required">*</span></span>
-            </span>
-            <p class="contact-content">
-              We’d like to stay in touch to tell you about news and
-              opportunities.<br /> We will treat your information carefully. See our
-              <a href="#">Terms & Conditions</a> and
-              <a href="#">Privacy Policy</a>.
-            </p>
-            <p class="contact-sub-heading">To receive further news, please consent below.</p>
-
-            <div class="radio-options">
-              <div class="radio-options-group">
-                <input type="radio" name="contact_preference" value="Yes" required />
-                <span class="radio-label">Yes</span>
+            <div>
+              <div class="radio-container">
+                <span class="radio-heading">I am interested in</span>
+                <span class="required">*</span>
               </div>
-              <div class="radio-options-group">
-                <input type="radio" name="contact_preference" value="No" required />
-                <span class="radio-label">No</span>
+
+              <div class="radio-options">
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    id="option1"
+                    name="interest"
+                    value="Slide3"
+                    required />
+                  <p for="option1" class="radio-label-content">
+                    Early Childhood Education
+                  </p>
+                </div>
+              </div>
+
+              <div class="radio-options">
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    id="option2"
+                    name="interest"
+                    value="Slide3"
+                    required />
+                  <p for="option2" class="radio-label-content">
+                    Learning More About ERI
+                  </p>
+                </div>
+              </div>
+
+              <div class="radio-options">
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    id="option3"
+                    name="interest"
+                    value="Slide4"
+                    required />
+                  <p for="option3" class="radio-label-content">
+                    Providing Training Courses
+                  </p>
+                </div>
+              </div>
+
+              <div class="radio-options">
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    id="option4"
+                    name="interest"
+                    value="Slide4"
+                    required />
+                  <p for="option4" class="radio-label-content">
+                    Training Courses For My Employees
+                  </p>
+                </div>
+              </div>
+
+              <div class="radio-options">
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    id="option5"
+                    name="interest"
+                    value="Slide5"
+                    required />
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Other"
+                      style="font-family: Raleway, sans-serif" />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="button-container">
-            <button type="button" id="nextButton" class="button">Next</button>
-          </div>
-        </form>
+            <div class="contact-preferences">
+              <span class="radio-heading">
+                CONTACT PREFERENCES
+                <span class="required"><span class="required">*</span></span>
+              </span>
+              <p class="contact-content">
+                We’d like to stay in touch to tell you about news and
+                opportunities.<br />
+                We will treat your information carefully. See our
+                <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>.
+              </p>
+              <p class="contact-sub-heading">
+                To receive further news, please consent below.
+              </p>
+
+              <div class="radio-options">
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    name="contact_preference"
+                    value="Yes"
+                    required />
+                  <span class="radio-label">Yes</span>
+                </div>
+                <div class="radio-options-group">
+                  <input
+                    type="radio"
+                    name="contact_preference"
+                    value="No"
+                    required />
+                  <span class="radio-label">No</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="button-container">
+              <button type="button" id="nextButton" class="button">Next</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
