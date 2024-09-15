@@ -1,0 +1,15 @@
+.thanks-paragraph {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.icon {
+  height: 24px;
+}

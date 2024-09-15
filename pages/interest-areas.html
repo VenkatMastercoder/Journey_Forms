@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interest Areas Forms</title>
+
+  <!--CSS FILE-->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/research-details.css">
+  <link rel="stylesheet" href="../css/interest-area.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="safety-container">
+      <div class="image-container">
+        <img src="../assets/images/Banner.png" alt="banner-image" class="banner-image" />
+      </div>
+      <div class="form-container">
+        <form action="./thanks.html">
+          <div class="interest-container">
+            <div class="radio-container">
+              <span class="radio-heading">I AM A</span>
+               <span class="required"> *</span>
+            </div>
+
+            <div class="radio-options">
+              <div class="radio-options-group">
+                <input type="radio" id="option1" name="interest" value="Early Childhood Education" required />
+                <p for="option1" class="radio-label-content">High School Student</p>
+              </div>
+            </div>
+
+            <div class="radio-options">
+              <div class="radio-options-group">
+                <input type="radio" id="option2" name="interest" value="Learning More About ERI" required />
+                <p for="option2" class="radio-label-content">Undergraduate Student</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="interest-container">
+            <p class="interest-heading">
+              AREA OF RESEARCH </p>
+            <p class="interest-sub-heading">Please specify your current research topic and whether it is
+              experimental or theoretical.</p>
+
+            <textarea class="interest-text-area"></textarea>
+          </div>
+
+          <div class="form-research-row">
+            <div class="form-research-group">
+              <label for="research-details" class="research-label">YOUR CURRENT UNIVERSITY, INSTITUTE, OR ORGANIZATION NAME <span class="required">*</span>
+              </label>
+              <textarea class="interest-text-area-2"></textarea>
+            </div>
+          </div>
+
+          <div class="research-details-button-container">
+            <button type="submit" class="button-variant-1">Back</button>
+            <button type="submit" class="button-variant-2">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

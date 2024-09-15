@@ -1,0 +1,55 @@
+.interest-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.interest-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: start;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  letter-spacing: 2px;
+  color: #333; 
+}
+
+.interest-sub-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: start;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  color: #333; 
+}
+
+.interest-text-area {
+  width: 100%;
+  min-height: 200px;
+  background-color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 20px;
+  border: 0;
+}
+
+.interest-text-area-2 {
+  width: 100%;
+  background-color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 0;
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .interest-text-area-2 {
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    padding: 20px;
+  }
+  
+}

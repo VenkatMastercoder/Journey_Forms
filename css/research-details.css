@@ -1,0 +1,208 @@
+.form-research-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-research-group {
+  width: calc(90% - 10px);
+  margin-bottom: 30px;
+}
+
+.research-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: start;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  color: #333; 
+}
+
+.radio-research-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: start;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  color: #333; 
+}
+
+.radio-research-sub-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: start;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  color: #333; 
+}
+
+.radio-research-label-content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-transform: none;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+  font-size: 1em;
+  user-select: none; 
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-checkmark {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  /* border: 2px solid #b38b32; Golden border color */
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px; 
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.checkbox-input:checked ~ .checkbox-checkmark::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #b38b32; /* Golden checkmark color */
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-checkmark::after {
+  content: "";
+  display: none;
+}
+
+.checkbox-input:checked ~ .checkbox-checkmark {
+  background-color: #fff;
+}
+
+.checkbox-input:checked ~ .checkbox-checkmark::after {
+  display: block;
+}
+
+.other-input {
+  font-family:Raleway, sans-serif; 
+  width: calc(30% - 10px);
+  padding: 6px; 
+  border: 0; 
+  background-color: #fff;
+}
+
+.research-details-button-container {
+  display: flex;
+  padding-top: 30px;
+}
+
+.button-variant-1 {
+  font-family: "Raleway", sans-serif;
+  background-color: transparent;
+  color: #000;
+  width: 140px;
+  height: 60px;
+  font-size: 1.2em;
+  border: 2px solid #000;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.button-variant-2 {
+  font-family: "Raleway", sans-serif;
+  background-color: #000;
+  color: #fff;
+  width: 140px;
+  height: 60px;
+  font-size: 1em;
+  border: none;
+  border-radius: 70px;  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+
+  .form-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form-research-group {
+    width: calc(100% - 5px);
+    margin-bottom: 30px;
+  }
+
+  .other-input {
+    font-family:Raleway, sans-serif; 
+    width: calc(90% - 10px);
+    padding: 6px; 
+    border: 0; 
+    background-color: #fff;
+  }
+
+  .research-details-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .button-variant-1 {
+    font-family: "Raleway", sans-serif;
+    background-color: transparent;
+    color: #000;
+    width: 100%;
+    height: 70px;
+    font-size: 1.2em;
+    border: 2px solid #000;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+
+  .button-variant-2 {
+    font-family: "Raleway", sans-serif;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    font-size: 1em;
+    border: none;
+    border-radius: 70px;  
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0;
+    text-transform: uppercase;
+  }
+  
+}
